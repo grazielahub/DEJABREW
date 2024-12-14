@@ -1,0 +1,273 @@
+body {
+    background: url('PICS/HOME BG.png') no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    margin: 0;
+    padding: 0;
+}
+
+.HEADER {
+    padding: 0;
+    color: rgb(96, 96, 87);
+    box-shadow: 0 0 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 20rem;
+    background-image: url('PICS/COFFEE HOME HEADING.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: -2.2rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
+    border-bottom: 5px solid #f7d39a;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h3{
+    color: white;
+}
+
+.logo-image {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f7d39a;;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+         text-align: center;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 40px;
+    margin-top: -.5rem; /* PARA MAG OVERLAP SA HEADER */
+    z-index: 2;
+    position: relative;
+}
+
+.CONTAINER1 {
+    padding: 30px;
+    color: rgb(251, 236, 221);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    width: 15%;
+    text-align: center;
+    z-index: 3;
+    background-image: url('BEST/DRINK\ COVER.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 20px rgba(172, 136, 97, 0.785);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.CONTAINER1:hover {
+    box-shadow: 0 0 15px rgba(201, 170, 125, 0.852), 
+                0 0 20px rgba(255, 248, 237, 0.8), 
+                0 0 30px #daaf51d3;
+    transform: scale(1.1); 
+}
+
+
+.CONTAINER2 {
+    padding: 30px;
+    color: rgb(251, 236, 221);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px;
+    border-radius: 10px;
+    width: 15%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 3;
+    background-image: url('BEST/PASTRY\ COVER.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 15px rgba(172, 136, 97, 0.785);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.CONTAINER2:hover {
+    box-shadow: 0 0 15px rgba(201, 170, 125, 0.852), 
+                0 0 20px rgba(255, 248, 237, 0.8), 
+                0 0 30px #daaf51d3; 
+    transform: scale(1.1); 
+}
+
+.DISCOUNTS {
+    padding: 30px;
+    color: rgb(21, 21, 20);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px;
+    border-radius: 10px;
+    width: 90%;
+    height: 1.5cm;
+    align-items: center;
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('BEST/faves.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 8px 15px rgb(241, 231, 220);
+}
+
+.DESCRIPTION {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    gap: 60px; 
+    margin-top: -1.5rem; /* PARA MAG OVERLAP SA HEADER */
+    margin-top: 3rem; /* Space below the header */
+    box-shadow: 1 1 2px rgb(241, 231, 220);
+
+}
+
+
+.BEST-DRINKS-CONTAINER {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    margin-top: 20px;
+    padding: 20px;
+}
+
+
+.BEST-DRINK1, .BEST-DRINK2, .BEST-DRINK3 {
+    padding: 30px;
+    color: rgba(126, 126, 57, 0.9);
+    height: 10rem;
+    width: 12rem;
+    background-color: rgba(151, 151, 58, 0.541);
+    text-align: center;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+.BEST-DRINK1 {
+    background-image: url('BEST/ESPRESSO.png');
+}
+
+.BEST-DRINK2 {
+    background-image: url('BEST/MATCHA.png');
+}
+
+.BEST-DRINK3 {
+    background-image: url('BEST/CARAMEL FRAPPUCCINO.png');
+}
+
+
+.BEST-DRINK1:hover, .BEST-DRINK2:hover, .BEST-DRINK3:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer; 
+}
+
+
+.BEST-PASTRIES-CONTAINER {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 60px; 
+    flex-wrap: wrap; 
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.BEST-PASTRIES1, .BEST-PASTRIES2, .BEST-PASTRIES3 {
+    padding: 30px;
+    color: rgb(126, 126, 57);
+    height: 10rem;
+    width: 12rem;
+    background-color: rgba(151, 151, 58, 0.541);
+    text-align: center;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.BEST-PASTRIES1 {
+    background-image: url('BEST/S_more Overload.png');
+}
+
+.BEST-PASTRIES2 {
+    background-image: url('BEST/APPLE\ PIE\ CINNAMON\ ROLL.png');
+}
+
+.BEST-PASTRIES3 {
+    background-image: url('BEST/CROISSANT.png');
+}
+
+.BEST-PASTRIES1:hover, .BEST-PASTRIES2:hover, .BEST-PASTRIES3:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); 
+    cursor: pointer; 
+}
+
+
+
