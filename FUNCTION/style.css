@@ -1,0 +1,85 @@
+/* General body styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Full screen height */
+    overflow: hidden; /* Prevent scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Blurred background image */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('HOME\ BG.png'); /* Path to your background image */
+    background-size: cover; /* Cover entire screen */
+    background-repeat: no-repeat; /* No repeating */
+    background-position: center; /* Center the image */
+    filter: blur(5px); /* Apply blur to the background */
+    z-index: -1; /* Place it behind other content */
+}
+
+/* Form container */
+form {
+    color: white;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background for form */
+    border-radius: 10px; /* Rounded corners */
+    width: 500px;
+    margin: 50px auto; /* Center form horizontally and add vertical spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 10px 20px;
+    -webkit-backdrop-filter: blur(10px); /* Apply blur to the background behind the form for Safari */
+    backdrop-filter: blur(5px); /* Apply blur effect */
+    z-index: 1; /* Keep the form above the background */
+    position: relative;
+}
+
+/* Labels and Inputs */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="checkbox"],
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Button styles */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.ACTION{
+    color: white;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background for form */
+    border-radius: 10px; /* Rounded corners */
+    width: 500px;
+    margin: 50px auto; /* Center form horizontally and add vertical spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 10px 20px;
+    -webkit-backdrop-filter: blur(10px); /* Apply blur to the background behind the form for Safari */
+    backdrop-filter: blur(5px); /* Apply blur effect */
+    z-index: 1; /* Keep the form above the background */
+    position: relative;
+}
